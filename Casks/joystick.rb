@@ -1,6 +1,6 @@
 cask "joystick" do
-  version "1.0"
-  sha256 "97b25dc841c16c57a00475c0d6457ff83c66b6577522f573d1cb1c968b8051a7"
+  version "1.1"
+  sha256 "02d6980734d3d15f1fa1cb977b50bea8e291c69f7cf5f5cc607c5b327e9a4ec6"
 
   url "https://github.com/kishan-ptl/joystick/releases/download/v#{version}/Joystick-#{version}.dmg"
   name "Joystick"
@@ -17,9 +17,10 @@ cask "joystick" do
   ]
 
   caveats <<~EOS
-    After installing, open Joystick and run the one-time setup (or
-    #{appdir}/Joystick.app/Contents/Resources/install.sh) to wire the
-    shell + Claude Code hooks. Requires Ghostty, zsh, jq, and Claude Code.
-    `brew uninstall` removes the app; run install.sh uninstall to unwire the hooks.
+    Open Joystick and click Enable to wire the shell + Claude Code hooks
+    (idempotent, backs up every file it edits), then open a new terminal.
+    Requires Ghostty, zsh, jq, and Claude Code.
+    `brew uninstall` removes the app; run
+    #{appdir}/Joystick.app/Contents/Resources/install.sh uninstall to unwire the hooks.
   EOS
 end
