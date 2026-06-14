@@ -7,7 +7,7 @@ cask "joystick" do
   desc "Live dashboard of your Ghostty tabs, shell commands, and Claude sessions"
   homepage "https://github.com/kishan-ptl/joystick"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Joystick.app"
 
