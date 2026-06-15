@@ -8,6 +8,7 @@ cask "joystick" do
   homepage "https://github.com/kishan-ptl/joystick"
 
   depends_on macos: :sonoma
+  depends_on formula: "jq"
 
   app "Joystick.app"
 
