@@ -1,6 +1,6 @@
 cask "joystick" do
-  version "1.1"
-  sha256 "02d6980734d3d15f1fa1cb977b50bea8e291c69f7cf5f5cc607c5b327e9a4ec6"
+  version "1.2"
+  sha256 "eaa0565ccc54fef986c263547e216a5c51444782490ca62ffb2d7608e9ea0047"
 
   url "https://github.com/kishan-ptl/joystick/releases/download/v#{version}/Joystick-#{version}.dmg"
   name "Joystick"
